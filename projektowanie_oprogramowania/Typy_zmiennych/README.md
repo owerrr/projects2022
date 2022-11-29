@@ -1,24 +1,43 @@
 # zlozone typy danych
 
 ### typ całkowity, 
-`C, C++, JavaScript, PHP, Python, Java`
-- reprezentują liczbę całkowitą z okreśłonego zakresu zależnego od danego języka, a czasami nawet konkretnej implementacji
+```cpp
+// C++
+int num2 = 2;
+```
+- liczba całkowita
 
 ### typ zmiennoprzecinkowy,
-`C, C++, JavaScript, PHP, Python, Java`
-- reprezentuja przybliżoną wartość liczby rzeczywistej,
+```cpp
+// C++
+float num1 = 1.1; // pojedyczna precyzja
+double num2 = 1.2; // podwójna precyzja
+```
+- przybliżoną wartość liczby rzeczywistej.
 
 ### typ znakowy,
-`C, C++, Java, Pascal`
-- znak pojedynczy
+```cpp
+// C++
+char c1 = 'A';
+```
+- pojedyczny znak.
 
 ### typ tekstowy,
-`C, C++, JavaScript, PHP, Python, Java`
+```cpp
+// C++
+std::string t1 = "Sample text";
+```
 - cały tekst,
 
 ### typ logiczny,
-`C, C++, JavaScript, PHP, Python, Java`
-- wartości logiczne 1(true) 0(false)
+```cpp
+// C++
+bool b1 = true;
+bool b2 = false;
+```
+- reprezentują wartości logiczne.
+
+<sup><sub>(Mogą również występować pod postacią 1 - True, 0 - False)</sub></sup>
 
 ## Literał
 ustalona wartość, wpisana przez progarmistę bezpośrednioo w określonym miejscu kodu programu. Większość języków programowania ma formy zapisu dla podstawowych wartości takich jak:
