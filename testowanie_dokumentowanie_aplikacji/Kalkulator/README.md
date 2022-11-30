@@ -18,7 +18,7 @@ calculatorButtons = [
 ```
 
 ### GUI Kalkulatora
-![zdjecie kalkulatora](/screenshots/img1.png)
+![zdjecie kalkulatora](/Screenshots/01.PNG)
 
 Legenda:
 ```
