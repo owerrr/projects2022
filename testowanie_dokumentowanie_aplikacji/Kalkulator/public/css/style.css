@@ -1,0 +1,92 @@
+/* domyślne kolory dla strony */
+:root{
+    /* domyślne kolory strony */
+    --background-color:rgb(255,255,255);
+    --color: rgb(0,0,0);
+    
+    /* domyślne kolory kalkulatora */
+    --calculator-bgColor: rgb(23,24,25);
+    --calculator-color: rgb(255,255,255); 
+    --calculator-result-bgColor: rgb(21, 88, 21);
+    --calculator-result-color: rgb(255,255,255);
+    --calculator-button-bgColor: rgb(56,57,58);
+    --calculator-button-bgColor-hover: rgb(45,46,47);
+    --calculator-specialButton-bgColor: rgb(204, 26, 26);
+    --calculator-specialButton-bgColor-hover: rgb(176, 16, 16);;
+}
+
+body{
+    font-family:arial;
+}
+
+#calculator_container{
+    width:450px;
+    height:585px;
+    padding:5px;
+    border-radius:5px;
+    background-color:var(--calculator-bgColor);
+    color:var(--calculator-color);
+}
+
+#calculator_result{
+    display:block;
+    width:95%;
+    height:75px;
+    line-height:75px;
+    text-align:right;
+    margin: 11px auto;
+    border-radius:5px;
+    background-color:var(--calculator-result-bgColor);
+    color:var(--calculator-result-color);
+}
+
+#calculator_result_answer{
+    margin:0;
+    margin-right: 10px;
+    font-size:30px;
+}
+
+#calculator_buttons_numbers{
+    width:327.5px;
+    margin-left:7px;
+    float:left;
+}
+#calculator_buttons_operators{
+    width:99.5px;
+    float:left;
+}
+
+.calculator_button{
+    width: calc(25% - 13px);
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background-color:var(--calculator-button-bgColor);
+    color:var(--calculator-button-color);
+    margin-left:5px;
+    cursor:pointer;
+    user-select:none;
+    border-radius:2px;
+}
+.button_xsmall:first-child{margin-left:12px;}
+.calculator_button:hover{
+    background-color:var(--calculator-button-bgColor-hover);
+}
+.button_small{
+    width:99.5px;
+    height:99.5px;
+    line-height: 99.5px;
+    font-size:35px;
+    margin-top:10px;
+}
+.button_largeHorizontal{
+    width:98%;
+    height:60px;
+    line-height: 60px;
+    font-size:35px;
+    margin-top:10px;
+}
+
+#calculator_button_clear{background-color:var(--calculator-specialButton-bgColor);}
+#calculator_button_clear:hover{background-color:var(--calculator-specialButton-bgColor-hover);}

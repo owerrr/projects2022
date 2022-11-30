@@ -33,7 +33,7 @@ std::string t1 = "Sample text";
 ```cpp
 // C++
 bool b1 = true;
-bool b2 = false;
+bool b2 = false; 
 ```
 - reprezentują wartości logiczne.
 
