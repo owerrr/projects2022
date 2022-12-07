@@ -4,10 +4,10 @@
 Algorytm to jednoznacznie określony ciąg czynności potrzebnych do wykonania zadania
 
 ### Cechy algorytmu
-- skończoność <sup>musi dojść do końca w określonym czasie</sup>
-- określoność <sup>musi zwracać zawsze takie same dane wyjściowe dla tych samych danych wejściowych</sup>
-- efektywność <sup>powinien zwrócić wynik w najmniejeszej liczbie kroków</sup>
-- poprawność <sup>wynik zwrócony przez algorytm musi być za każdym razem poprawny</sup>
+- skończoność <sub>sup>musi dojść do końca w określonym czasie</sup></sub>
+- określoność <sub>sup>musi zwracać zawsze takie same dane wyjściowe dla tych samych danych wejściowych</sup></sub>
+- efektywność <sub>sup>powinien zwrócić wynik w najmniejeszej liczbie kroków</sup></sub>
+- poprawność <sub><sup>wynik zwrócony przez algorytm musi być za każdym razem poprawny</sup></sub>
 
 ### Schemat blokowy algorytmu
 
