@@ -34,3 +34,54 @@ Przedstawienie algorytmu w kolejnych punktach *(krokach)*. Każdy punkt takiej l
 ```
 
 ![zdjecie diagramu nr. 1](Screenshots/01.png)
+
+### Sposoby zapisu algorytmów
+
+#### Pseudojęzyk programowania
+jest to sposób zapisu algorytmu, który zachowując strukturę charakterystyczną dla kodu zapisanego w języku programowania, rezygnuje ze ścisłych reguł składniowych na rzecz prostoty i czytelności.
+
+<sub><sup>**algorytm znajdujący najmniejszą liczbę**</sup></sub>
+```cpp
+#include <iostream>
+
+int getMin(int a, int b) {
+	int c = a < b ? a : b;
+	return c;
+}
+
+int a, b;
+int main() {
+	std::cout << "Podaj liczbe a: "; std::cin >> a;
+	std::cout << "Podaj liczbe b: "; std::cin >> b;
+	std::cout << "Liczba " << getMin(a, b) << " jest mniejsza!\n";
+	return 0;
+}
+```
+
+#### Lista kroków
+
+<sub><sup>**lista kroków wyjmowania mleka z lodówki**</sup></sub>
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main(){
+    const	std::vector<std::string> getMilkAlgo = {
+		"Znajdz lodowke",
+		"Otworz lodowke",
+		"Wyciagnij mleko",
+		"Zamknij lodowke",
+		"Postaw mleko",
+	};
+	for (int i = 0; i < getMilkAlgo.size(); i++) {
+		std::cout << i+1 << ". " << getMilkAlgo[i] << std::endl;
+	}
+    return 0;
+}
+```
+
+#### Drzewo decyzyjne
+Najczęściej wybieranym graficznym elementem procesu decyzyjnego stosowanym przy tzw. uczeniu maszynowym oraz w obliczaniu prawdopodobieństaw jest drzewo decyzyjne. Jest to odwzorowanie wszystkich kroków/decyzji za pomocą schematu przypominającego drzewo, patrząc od korzenia (przy czym korzeń wytępuje w tym przypadku u góry schematu. Każda gałąź to droga do decyzji, które obrazuje liść).
+
+![zdjecie diagramu nr. 1](Screenshots/02.png)
