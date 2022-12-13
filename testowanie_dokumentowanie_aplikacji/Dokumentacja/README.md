@@ -74,7 +74,7 @@ należy opisać potencjalne ryzyka:
 
 | Nazwa zadania | Data rozp. | Data zakoń. | Odpowiedzialny |
 | :------------ | :--------- | :---------- | :--------------|
-| `string`      | `string`   | `string`    | `date`         |
+| `string`      | `date`     | `date`      | `string`       |
 
 #### Raportowanie i komunikacja
 
