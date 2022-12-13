@@ -36,7 +36,9 @@ Jest to dokument zawierający podsumowania aktywności testowych i osiągniętyc
 
 Zawiera opis ról wraz z zakresem obowiązków przydzielonych do osób, które biorą udział w tworzeniu specyfikacji funkcjonalnej zmiany informatycznej.
 
-ID, imie nazwisko, rola/odpowiedzialność/zakres zadań, odpowiedzialny
+| Id   | imie nazwisko | rola     | odpowiedzialny |
+| :--- | :------------ | :------- | :------------- |
+| `id` | `string`      | `string` | `string`       |
 
 ### Opis postępowania
 
@@ -70,7 +72,9 @@ należy opisać potencjalne ryzyka:
 
 #### Harmonogram testów
 
-Nazwa zadania, data rozpoczęcia, data zakończenia, Odpowiedzialny
+| Nazwa zadania | Data rozp. | Data zakoń. | Odpowiedzialny |
+| :------------ | :--------- | :---------- | :--------------|
+| `string`      | `string`   | `string`    | `date`         |
 
 #### Raportowanie i komunikacja
 
@@ -80,7 +84,6 @@ Nazwa zadania, data rozpoczęcia, data zakończenia, Odpowiedzialny
 
 #### Załączniki
 
-Id, dokument, odnośnik do rozdziału planu, data ostatniej modyfikacji, wersja dokumentu
-
-
-<sub><sup>***(do zrobienia tabele)***</sup></sub>
+| Id   | dokument | odnośnik | data modyfikacji | wersja   |
+| :--- | :------- | :------- | :--------------- | :------- |
+| `id` | `string` | `string` | `date`           | `string` |
