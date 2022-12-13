@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parcel</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <style>
+    :root{
+      --background-color:rgba(23,24,25,1);
+      --color:rgb(255,255,255);
+    }
+
+    body{
+      background-color: var(--background-color);
+      color: var(--color);
+    
+    }
+
+    #main-container{
+      width:100%;
+      padding:25px;
+      background-color:rgb(53,54,55);
+      background: url('background.png');
+    }
+    #app{
+      width:800px;
+      background-color:transparent;
+      margin-left:auto; margin-right:auto;
+      text-align:center;
+      padding:25px 0px;
+      display:block;
+      text-align:left;
+    }
+
+    .adventGift{
+      width:230px;
+      height:230px;
+      line-height:210px;
+      font-size:48px;
+      float:left;
+      padding:10px;
+      background-color:rgb(255,0,0);
+      margin:25px 0px 0px 25px;
+      text-align:center;
+    }
+    .adventGift:hover{
+      cursor:pointer;
+      background-color:rgb(170, 15, 15);
+    }
+    .adventGift > p {display:none;}
+    .adventGiftAvailable:hover span{display:none;}
+    .adventGiftAvailable:hover:after{
+      content: "✔";
+    }
+    .adventGiftUnavailable:hover span{display:none;}
+    .adventGiftUnavailable:hover:after{
+      content: "✖";
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">ŚWIĄTECZNA</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div id="main-container">
+      <h1 class="display-1" style="text-align:center;">KALENDARZ ADWENTOWY</h1>
+        <hr/>
+    </div>
+    <div id="app">
+      <div id="jokes"></div>
+      <div id="adventCallendar"></div>
+    </div>
+    <script type="module" src="index.ts"></script>
+</body>
+</html>
