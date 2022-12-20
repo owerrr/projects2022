@@ -67,7 +67,7 @@ void Zad4(int input) {
 }
 
 int main(){
-    num_filter = 0;
+    int num_filter = 0;
     std::cout << "Podaj liczbe naturalna, wieksza od 0: "; std::cin >> num_filter;
     std::cout << "wyswietlam " << num_filter << " poteg liczby 3:\n";
     Zad4(num_filter);
@@ -92,9 +92,9 @@ int Zad5(std::vector<int> input) {
 }
 
 int main(){
-    source = {};
+    std::vector<int> source = {};
     int number_input = 1;
-    std::cout << "(0 aby zakonczyc)";
+    std::cout << "(0 aby zakonczyc)\n";
     while (number_input != 0) {
         std::cout << "Podaj liczbe: "; std::cin >> number_input;
         source.push_back(number_input);
@@ -102,6 +102,58 @@ int main(){
     int sum_source = Zad5(source);
     std::cout << "Suma wpisanych liczb wynosi: " << sum_source << std::endl;
 
+    return 0;
+}
+```
+
+### Zadanie 6
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+int Zad6(std::vector<int> input){
+    int temp = input[0];
+    for (int n : input){
+        if(!(n%10) && n > temp) temp = n;
+    }
+    if (!(temp%10)) return temp;
+    else return 0;
+}
+
+int main(){
+    std::cout << "(x aby zakonczyc)\n";
+    std::vector<int> source = {};
+    std::string input_line = "";
+    while(input_line != "x"){
+        std::cout << "Podaj liczbe: ";std::cin>>input_line;
+        if(input_line != "x") source.push_back(std::stoi(input_line));
+    }
+    
+    std::cout << "Najwieksza podana liczba zawierajaca 0 na koncu to: " << Zad6(source) << std::endl;
+    
+    return 0;
+}
+```
+
+### Zadanie 7
+
+```cpp
+#include <iostream>
+
+int Zad7(int source){
+    int temp = 1;
+    for(int i = 2; i<= source; i++){
+        temp *= i;
+    }
+    return temp;
+}
+
+int main(){
+    int input = 0;
+    std::cout << "Podaj liczbe: ";std::cin>>input;
+    std::cout << "Silnia tej liczby wynosi: " << Zad7(input);
     return 0;
 }
 ```
