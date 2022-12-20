@@ -1,3 +1,6 @@
+### Zadanie 2
+
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -9,12 +12,23 @@ std::vector<int> Zad2(std::vector<int> input) {
     return temp;
 }
 
-void Zad2_2() {
-    for (int i = 10; i < 100; i++) {
-        std::cout << i;
-        if (i != 99) std::cout << ", ";
+int main(){
+    std::vector<int> source = { 1, 4, 10, 15, 25, 5, 9, 27, 103, 99, 235, 7211, 111111, 2, 917 };
+    std::vector<int> source_filter = Zad2(source);
+    std::cout << "liczby dwucyfrowe:\n";
+    for (int i = 0; i < source_filter.size(); i++) {
+        std::cout << source_filter[i];
+        if (i != source_filter.size() - 1) std::cout << ", ";
     }
+
+    return 0;
 }
+```
+
+### Zadanie 3
+
+```cpp
+#include <iostream>
 
 void Zad3(int input) {
     if (input < 1) return;
@@ -23,6 +37,21 @@ void Zad3(int input) {
         if (i != input - 1) std::cout << ", ";
     }
 }
+
+int main(){
+    int num_filter = 0;
+    std::cout << "Podaj liczbe naturalna, wieksza od 0: "; std::cin >> num_filter;
+    std::cout << "liczby naturalne mniejsze od "<< num_filter <<":\n";
+    Zad3(num_filter);
+
+    return 0;
+}
+```
+
+### Zadanie 4
+
+```cpp
+#include <iostream>
 
 void Zad4(int input) {
     int number = 3;
@@ -37,6 +66,22 @@ void Zad4(int input) {
     }
 }
 
+int main(){
+    num_filter = 0;
+    std::cout << "Podaj liczbe naturalna, wieksza od 0: "; std::cin >> num_filter;
+    std::cout << "wyswietlam " << num_filter << " poteg liczby 3:\n";
+    Zad4(num_filter);
+
+    return 0;
+}
+```
+
+### Zadanie 5
+
+```cpp
+#include <iostream>
+#include <vector>
+
 int Zad5(std::vector<int> input) {
     int sum = 0;
         if (input.size() == 0) return sum;
@@ -46,46 +91,7 @@ int Zad5(std::vector<int> input) {
     return sum;
 }
 
-int main()
-{
-    //zadanie 2
-    std::vector<int> source = { 1, 4, 10, 15, 25, 5, 9, 27, 103, 99, 235, 7211, 111111, 2, 917 };
-    std::vector<int> source_filter = Zad2(source);
-    std::cout << "liczby dwucyfrowe:\n";
-    for (int i = 0; i < source_filter.size(); i++) {
-        std::cout << source_filter[i];
-        if (i != source_filter.size() - 1) std::cout << ", ";
-    }
-
-    //
-
-    std::cout << "\n\n";
-
-    // zadanie 3
-    int num_filter = 0;
-    std::cout << "Podaj liczbe naturalna, wieksza od 0: "; std::cin >> num_filter;
-    std::cout << "liczby naturalne mniejsze od "<< num_filter <<":\n";
-    Zad3(num_filter);
-
-    //
-
-    std::cout << "\n\n";
-
-    //
-
-    // zadanie 4
-    num_filter = 0;
-    std::cout << "Podaj liczbe naturalna, wieksza od 0: "; std::cin >> num_filter;
-    std::cout << "wyswietlam " << num_filter << " poteg liczby 3:\n";
-    Zad4(num_filter);
-
-    //
-
-    std::cout << "\n\n";
-
-    //
-
-    // zadanie 5
+int main(){
     source = {};
     int number_input = 1;
     std::cout << "(0 aby zakonczyc)";
@@ -96,11 +102,6 @@ int main()
     int sum_source = Zad5(source);
     std::cout << "Suma wpisanych liczb wynosi: " << sum_source << std::endl;
 
-    //
-
-    std::cout << "\n\n";
-
-    //
-
-    // zadanie 6
+    return 0;
 }
+```
