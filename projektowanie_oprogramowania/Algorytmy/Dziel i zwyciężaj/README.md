@@ -28,3 +28,6 @@ Algorytm sprawdza, czy w podanej, posortowanej tablicy znajduje się element o d
 - Podział kończy się, gdy znajdziemy szukany element, lub gdy przedział osiągnie długość 0.
 
 ![zdjecie nr. 1](Screenshots/01.png)
+
+
+![zdjecie nr. 2](Screenshots/02.png)
