@@ -31,3 +31,6 @@ Algorytm sprawdza, czy w podanej, posortowanej tablicy znajduje się element o d
 
 
 ![zdjecie nr. 2](Screenshots/02.png)
+
+
+![zdjecie nr. 3](Screenshots/03.png)
