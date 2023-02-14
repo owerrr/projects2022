@@ -1,0 +1,1 @@
+![zdjecie diagramu nr. 1](Screenshots/01.png)
