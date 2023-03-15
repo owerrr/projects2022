@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include <string>
+ 
+using namespace std;
+ 
+void wejscieFormat(string sDana) {
+    for (int i = 0; i < sDana.length(); i++) {
+        if (isdigit(sDana[i]) == false) {
+            throw "Podano nieprawidlowe dane wejsciowe!";
+        }
+    }
+}
+ 
+void wejscieZakres(int iDana) {
+    if ((iDana < 1) || (iDana > 4)) throw "Ocena musi byc z zakresu [1-4]!";
+}
+ 
+int main()
+{
+    string sOcena = "10";
+    try{
+        wejscieFormat(sOcena);
+        int ocena = stoi(sOcena);
+        wejscieZakres(ocena);
+            switch (ocena) {
+            case 1:
+                cout << "Uczen nie otrzymuje promocji" << endl;
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                std::cout << "Uczen otrzymuje promocje" << endl;
+                break;
+            }
+    }
+    catch(const char* err) {
+        std::cout << "Znaleziono blad/y!\n" << err << std::endl;
+    }
+}
